@@ -79,13 +79,26 @@ body {
     background-color: teal;
 }
 
+/* 
+    ? Sticky
+    * mix of relative and fixed
+    * relative to the flow
+    * position definition used for when you start scrolling
+    * stays fixed when scrolling; relative when stationary
+*/
+
 .child5 {
+    position: sticky;
+    top: 100px;
     border: 2px solid gray;
     background-color: gray;
 }
+
 /* 
     ? Display Property
-    
+    * treats an element as block or inline
+    * block is created top-bottom; spans full page width
+    * inline is created side-by-side; spans width of its content
 */
 
 .display-container {
@@ -95,4 +108,40 @@ body {
 .block-container {
     border: 2px solid black;
     margin: 5px;
+
+    display: inline;
+}
+
+.inline-element {
+    /* display: block; */
+}
+
+.inline-block {
+    border: 2px solid black;
+    margin: 5px;
+
+    display: inline-block;
+    width: 250px;
+}
+
+/* 
+    ? Float
+    * shifts element left or right
+*/
+
+.float-container {
+    margin-top: 2em;
+    border: 2px solid blue;
+    width: 50vw;
+    height: 25vw;
+}
+
+.float-box {
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    background-color: rebeccapurple;
+    color: white;
+
+    float: right;
 }
